@@ -82,7 +82,7 @@ For changing datasets, one needs to modify the definitions of the classes ```Dat
 2. If we want to use the original ResNet18 architecture or any other existing architectures from torchvision.models, include the line 
 ```model = models.resnet18(pretrained=True) #use torch models``` in model.py.
 
-3. ```get_grad()``` function in ```helper.py``` will have the last layer name changed as per the architecture. For the current model, the last layer name is ```self.linear``` ; hence for extracting the last layer output, line number 70 in ```helper.py``` is ```params = model.linear.weight``` .
+3. ```get_grad()``` function in ```helper.py``` will have the last layer name changed as per the architecture. For the current ResNet18 model, the last layer name is ```self.linear``` ; hence for extracting the last layer output, line number 70 in ```helper.py``` is ```params = model.linear.weight``` and similarly for fairness, line number x in ```helper.py``` is ```params = model.layer3.weight```.
 
 For the inbuilt torch model, the last layer name for ResNet implementations, is ```self.fc``` ; hence for extracting the last layer output, the line will turn to ```params = model.fc.weight```.
 
