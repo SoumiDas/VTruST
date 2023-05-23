@@ -44,6 +44,8 @@ Train the selected set of datapoints by running
 
 <i>Model:</i> ResNet-18
 
+Please download 'CIFAR-10-C' from https://zenodo.org/record/2535967 and store it under robustness/
+
 The default parameters are provided in ```config.json```. One can vary the parameters by running ```python config_create.py```
 
 In order to obtain selected datapoints and their scores, from VTruST, run
