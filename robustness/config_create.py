@@ -18,8 +18,7 @@ params['trainbatch'] = 100 #Training data batch size
 params['testbatch'] = 100 #Test data batch size
 params['epochs'] = 2 #Training epochs
 params['num_freqep'] = 40 #Optional ; Frequency of epochs at which VTruST will be executed
-#60% of 200000 = 120000 i.e 1200 batches, selecting 1300 batches
-params['num_trajpoint'] = 1300 #Number of to-be selected trajectories
+params['num_trajpoint'] = 1300 #Number of to-be selected batches
 
 #Path
 params['root_dir'] = './main/'
