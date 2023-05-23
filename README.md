@@ -92,14 +92,7 @@ For changing datasets, one needs to modify the definitions of the classes ```Dat
 
 For the inbuilt torch model, the last layer name for ResNet implementations, is ```self.fc``` ; hence for extracting the last layer output, the line will turn to ```params = model.fc.weight```.
 
-
-Overall, while using any other torch models,  one needs to definitely know:
-
-1. the last layer name for computing gradients.
-
-2. the layer name from where feature has to be extracted.
-
-3. the feature dimension of extracted features, which can be specified beforehand in config_create.py under the key ‘featuredim’.
+Overall, while using any other torch models,  one needs to definitely know the last layer name for computing gradients.
 
 <b> Change in training parameters </b>
 
