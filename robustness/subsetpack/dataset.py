@@ -102,6 +102,11 @@ class Dataset(object):
         for i in range(num_classes):
             class_aug_dict[i] = []
 
+
+        #Sampled Augmentation datasets from 3 rounds
+
+        #Round 1
+
         file = open("1204_2041_code2_dict_data_r1_class_aug_dict.txt", "r")
 
         for line in file:
@@ -134,6 +139,8 @@ class Dataset(object):
         class_aug_dict = {}
         for i in range(num_classes):
             class_aug_dict[i] = []
+
+        #Round 2
 
         file = open("2112_1204_2041_code2_dict_data_r2_class_aug_dict_mod.txt", "r")
 
@@ -171,6 +178,7 @@ class Dataset(object):
         for i in range(num_classes):
             class_aug_dict[i] = []
 
+        #Round 3
 
         file = open("2212_dict_data_r3_s10.txt", "r")
 
