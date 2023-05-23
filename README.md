@@ -56,6 +56,10 @@ Train the selected set of datapoints by running
 
 ```python train_eval_SA.py```
 
+Test the model for robustness by running
+
+```python test_robust.py```
+
 # Code Structure
 
 The different modules in which this code repository has been organised is:
