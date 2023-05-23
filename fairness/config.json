@@ -1,1 +1,0 @@
-{"csel": true, "resume": false, "retain_scores": false, "findsubset": true, "simsel": false, "trainbatch": 100, "testbatch": 60, "epochs": 20, "num_trajpoint": 32, "num_freqep": 40, "root_dir": "./main/"}
