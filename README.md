@@ -11,7 +11,7 @@ git clone https://github.com/SoumiDas/VTruST.git
 
 cd VTruST
 
-conda create --name vtrust --file requirements.txt
+conda env create -f requirements.txt
 ```
 
 After the environment gets installed,
