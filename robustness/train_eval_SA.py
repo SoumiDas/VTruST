@@ -152,7 +152,6 @@ start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 # Data
 print('==> Preparing data..')
 
-#transform=transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.1307,), (0.3081,))])
 transform_train = transforms.Compose([
     transforms.RandomCrop(32, padding=4),
     transforms.RandomHorizontalFlip(),
@@ -191,6 +190,10 @@ class_aug_dict = {}
 for i in range(num_classes):
     class_aug_dict[i] = []
 
+
+#Sampled Augmentation datasets from 3 rounds
+
+#Round 1
 file = open("1204_2041_code2_dict_data_r1_class_aug_dict.txt", "r")
 
 for line in file:
@@ -224,6 +227,7 @@ class_aug_dict = {}
 for i in range(num_classes):
     class_aug_dict[i] = []
 
+#Round 2
 file = open("2112_1204_2041_code2_dict_data_r2_class_aug_dict_mod.txt", "r")
 
 for line in file:
@@ -253,7 +257,7 @@ class_aug_dict = {}
 for i in range(num_classes):
     class_aug_dict[i] = []
 
-
+#Round 3
 file = open("2212_dict_data_r3_s10.txt", "r")
 
 for line in file:
