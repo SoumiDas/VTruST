@@ -1,6 +1,6 @@
 # VTruST
 
-This is the code repository for our paper 'VTruST : Controllable value function based subset selection for Data-Centric Trustworthy AI'.
+This is the code repository for our paper 'VTruST : Controllable value function based subset selection for Data-Centric Trustworthy AI' that has been accepted at DMLR@ICLR.
 
 # Getting Started
 
